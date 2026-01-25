@@ -1,1 +1,5 @@
+CREATE DATABASE IslandFreshDB;
+GO
 
+USE IslandFreshDB;
+GO
