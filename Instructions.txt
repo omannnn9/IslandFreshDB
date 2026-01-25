@@ -22,7 +22,7 @@ What Kaniah wants from us:
  Leader:
  Deadline:week 4
 
-4.Final database design
+4.Final database design(responsible for final database creation)
  Leader:
  Deadline:week 6 
 
@@ -42,7 +42,7 @@ What Kaniah wants from us:
  Leader:
  Deadline:week 3 
 
-9.Testing the data with Data
+9.Testing with data
  Leader:
  Deadline:week 7
 
