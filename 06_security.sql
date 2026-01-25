@@ -1,1 +1,8 @@
+CREATE ROLE CashierRole;
+CREATE ROLE ManagerRole;
 
+GRANT SELECT, INSERT ON Sale TO CashierRole;
+DENY DELETE ON Product TO CashierRole;
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON Product TO ManagerRole;
+GRANT SELECT, INSERT, UPDATE, DELETE ON Stock TO ManagerRole;
