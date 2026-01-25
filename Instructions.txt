@@ -1,0 +1,56 @@
+IslandFreshDB - supermarket
+
+Tables:
+1.Products and categories 
+2.suppliers 
+3.stock levels 
+4.sales transactions 
+5.customers 
+6.Employees 
+
+What Kaniah wants from us:
+
+1.Detailed descriptiom of DBA implemeted(2-3 pages)
+ Leader:
+ Deadline:week 7 
+
+2.ERD(Entity Relationship Diagram)
+ Leader:
+ Deadline:week 2
+
+3.Normalization till 3NF
+ Leader:
+ Deadline:week 4
+
+4.Final database design
+ Leader:
+ Deadline:week 6 
+
+5.Brief description of procedures implemented
+ Leader:
+ Deadline:week 5
+
+6.Use of appropriate triggers
+ Leader:
+ Deadline:week 5
+
+7.DCL - Relevant security measures 
+ Leader:
+ Deadlineweek 6
+
+8.Creation of tables 
+ Leader:
+ Deadline:week 3 
+
+9.Testing the data with Data
+ Leader:
+ Deadline:week 7
+
+10.Presentation powerpoint
+ Leader: 
+ Deadline:week 10
+
+
+
+Submission week:week 9
+Presentation week:week 11
