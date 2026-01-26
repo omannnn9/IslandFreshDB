@@ -5,9 +5,9 @@ Tables:
 2.categories - Oman
 3.suppliers - Ashfar
 4.stock levels - Farhaan
-5.sales transactions - Ayush
+5.Employees - Ayush
 6.customers - Yohan
-7.Employees - Oman
+7.sales transactions - Oman
 
 What Kaniah wants from us:
 
