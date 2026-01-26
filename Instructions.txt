@@ -12,43 +12,43 @@ Tables:
 What Kaniah wants from us:
 
 1.Detailed descriptiom of DBA implemeted(2-3 pages)
- Leader:
+ Leader:Ayush
  Deadline:week 7 
 
 2.ERD(Entity Relationship Diagram)
- Leader:
+ Leader:Ashfar
  Deadline:week 2
 
 3.Normalization till 3NF
- Leader:
+ Leader:Ashfar
  Deadline:week 4
 
 4.Final database design(responsible for final database creation)
- Leader:
+ Leader:Farhaan
  Deadline:week 6 
 
 5.Brief description of procedures implemented
- Leader:
+ Leader:Oman
  Deadline:week 5
 
 6.Use of appropriate triggers
- Leader:
+ Leader:Yohan
  Deadline:week 5
 
 7.DCL - Relevant security measures 
- Leader:
+ Leader:Yohan
  Deadlineweek 6
 
 8.Creation of tables 
- Leader:
+ Leader:Oman
  Deadline:week 3 
 
 9.Testing with data
- Leader:
+ Leader:Farhaan
  Deadline:week 7
 
 10.Presentation powerpoint
- Leader: 
+ Leader:Ayush
  Deadline:week 10
 
 
