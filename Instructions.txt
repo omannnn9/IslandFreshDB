@@ -1,13 +1,13 @@
 IslandFreshDB - supermarket
 
 Tables:
-1.Products 
-2.categories 
-3.suppliers 
-4.stock levels 
-5.sales transactions 
-6.customers 
-7.Employees 
+1.Products - Yohan
+2.categories - Oman
+3.suppliers - Ashfar
+4.stock levels - Farhaan
+5.sales transactions - Ayush
+6.customers - Yohan
+7.Employees - Oman
 
 What Kaniah wants from us:
 
