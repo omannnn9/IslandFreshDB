@@ -1,11 +1,11 @@
---1 category table 
+--1 category table -Oman 
 CREATE TABLE Category (
     CategoryID INT IDENTITY(1,1) PRIMARY KEY,
     CategoryName VARCHAR(50) NOT NULL UNIQUE,
     Description VARCHAR(100)
 );
 
---2 supplier table
+--2 supplier table -Ashfar
 CREATE TABLE Supplier (
     SupplierID INT IDENTITY(1,1) PRIMARY KEY,
     SupplierName VARCHAR(100) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE Supplier (
     Address VARCHAR(150)
 );
 
---3 product table 
+--3 product table -Yohan
 CREATE TABLE Product (
     ProductID INT IDENTITY(1,1) PRIMARY KEY,
     ProductName VARCHAR(100) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE Product (
     FOREIGN KEY (SupplierID) REFERENCES Supplier(SupplierID)
 );
 
---4 stock table 
+--4 stock table -Farhaan
 CREATE TABLE Stock (
     StockID INT IDENTITY(1,1) PRIMARY KEY,
     ProductID INT NOT NULL UNIQUE,
@@ -35,16 +35,9 @@ CREATE TABLE Stock (
     FOREIGN KEY (ProductID) REFERENCES Product(ProductID)
 );
 
---5 stock table 
-CREATE TABLE Stock (
-    StockID INT IDENTITY(1,1) PRIMARY KEY,
-    ProductID INT NOT NULL UNIQUE,
-    Quantity INT NOT NULL CHECK (Quantity >= 0),
-    LastUpdated DATETIME DEFAULT GETDATE(),
-    FOREIGN KEY (ProductID) REFERENCES Product(ProductID)
-);
 
---6 customer table 
+
+--5 customer table --Yohan
 CREATE TABLE Customer (
     CustomerID INT IDENTITY(1,1) PRIMARY KEY,
     FirstName VARCHAR(50) NOT NULL,
@@ -53,7 +46,7 @@ CREATE TABLE Customer (
     Email VARCHAR(100)
 );
 
---7 emplyee table
+--6 emplyee table --Ayush
 CREATE TABLE Employee (
     EmployeeID INT IDENTITY(1,1) PRIMARY KEY,
     FirstName VARCHAR(50) NOT NULL,
@@ -63,7 +56,7 @@ CREATE TABLE Employee (
     Salary DECIMAL(10,2) CHECK (Salary > 0)
 );
 
---8 sale table 
+--7 sale table --Oman
 
 CREATE TABLE Sale (
     SaleID INT IDENTITY(1,1) PRIMARY KEY,
