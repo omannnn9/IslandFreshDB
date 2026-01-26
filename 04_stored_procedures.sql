@@ -22,7 +22,7 @@ BEGIN
     WHERE ProductID = @ProductID;
 END;
 
---3 view all products 
+--3 view all products & aupplier
 CREATE PROCEDURE sp_ViewProducts
 AS
 BEGIN
