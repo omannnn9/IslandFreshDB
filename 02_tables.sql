@@ -31,7 +31,7 @@ CREATE TABLE Stock (
     StockID INT IDENTITY(1,1) PRIMARY KEY,
     ProductID INT NOT NULL UNIQUE,
     Quantity INT NOT NULL CHECK (Quantity >= 0),
-    LastUpdated DATETIME DEFAULT GETDATE(),
+    LastUpdated DATETIME,
     FOREIGN KEY (ProductID) REFERENCES Product(ProductID)
 );
 
