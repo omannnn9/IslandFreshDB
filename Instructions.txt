@@ -15,7 +15,7 @@ What Kaniah wants from us:
  Leader:Ayush
  Deadline:week 7 
 
-2.ERD(Entity Relationship Diagram)
+2.ERD(Entity Relationship Diagram) ✅
  Leader:Ashfar
  Deadline:week 2
 
@@ -27,11 +27,11 @@ What Kaniah wants from us:
  Leader:Farhaan
  Deadline:week 6 
 
-5.Brief description of procedures implemented
+5.Brief description of procedures implemented ✅
  Leader:Oman
  Deadline:week 5
 
-6.Use of appropriate triggers
+6.Use of appropriate triggers ✅
  Leader:Yohan
  Deadline:week 5
 
@@ -39,7 +39,7 @@ What Kaniah wants from us:
  Leader:Yohan
  Deadlineweek 6
 
-8.Creation of tables 
+8.Creation of tables ✅
  Leader:Oman
  Deadline:week 3 
 
