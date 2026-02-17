@@ -45,6 +45,9 @@ CREATE TABLE Customer (
     Email VARCHAR(100)
 );
 
+ALTER TABLE Customer
+ADD CONSTRAINT UQ_Customer_Phone UNIQUE (Phone);
+
 --6 emplyee table --Ayush
 CREATE TABLE Employee (
     EmployeeID INT PRIMARY KEY,
