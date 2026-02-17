@@ -1,13 +1,13 @@
 --1 category table -Oman 
 CREATE TABLE Category (
-    CategoryID INT IDENTITY(1,1) PRIMARY KEY,
+    CategoryID INT PRIMARY KEY,
     CategoryName VARCHAR(50) NOT NULL UNIQUE,
     Description VARCHAR(100)
 );
 
 --2 supplier table -Ashfar
 CREATE TABLE Supplier (
-    SupplierID INT IDENTITY(1,1) PRIMARY KEY,
+    SupplierID INT PRIMARY KEY,
     SupplierName VARCHAR(100) NOT NULL,
     Phone VARCHAR(15),
     Email VARCHAR(100),
@@ -16,7 +16,7 @@ CREATE TABLE Supplier (
 
 --3 product table -Yohan
 CREATE TABLE Product (
-    ProductID INT IDENTITY(1,1) PRIMARY KEY,
+    ProductID INT PRIMARY KEY,
     ProductName VARCHAR(100) NOT NULL,
     CategoryID INT NOT NULL,
     SupplierID INT NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE Product (
 
 --4 stock table -Farhaan
 CREATE TABLE Stock (
-    StockID INT IDENTITY(1,1) PRIMARY KEY,
+    StockID INT PRIMARY KEY,
     ProductID INT NOT NULL UNIQUE,
     Quantity INT NOT NULL CHECK (Quantity >= 0),
     LastUpdated DATETIME,
@@ -39,7 +39,7 @@ CREATE TABLE Stock (
 
 --5 customer table --Yohan
 CREATE TABLE Customer (
-    CustomerID INT IDENTITY(1,1) PRIMARY KEY,
+    CustomerID INT PRIMARY KEY,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50),
     Phone VARCHAR(15),
@@ -48,7 +48,7 @@ CREATE TABLE Customer (
 
 --6 emplyee table --Ayush
 CREATE TABLE Employee (
-    EmployeeID INT IDENTITY(1,1) PRIMARY KEY,
+    EmployeeID INT PRIMARY KEY,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50),
     Role VARCHAR(20) CHECK (Role IN ('Cashier', 'Manager')),
@@ -59,7 +59,7 @@ CREATE TABLE Employee (
 --7 sale table --Oman
 
 CREATE TABLE Sale (
-    SaleID INT IDENTITY(1,1) PRIMARY KEY,
+    SaleID INT PRIMARY KEY,
     SaleDate DATETIME DEFAULT GETDATE(),
     ProductID INT NOT NULL,
     CustomerID INT NOT NULL,
