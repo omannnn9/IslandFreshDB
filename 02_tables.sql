@@ -21,7 +21,6 @@ CREATE TABLE Product (
     CategoryID INT NOT NULL,
     SupplierID INT NOT NULL,
     UnitPrice DECIMAL(10,2) NOT NULL CHECK (UnitPrice > 0),
-    ReorderLevel INT DEFAULT 10 CHECK (ReorderLevel >= 0),
     FOREIGN KEY (CategoryID) REFERENCES Category(CategoryID),
     FOREIGN KEY (SupplierID) REFERENCES Supplier(SupplierID)
 );
