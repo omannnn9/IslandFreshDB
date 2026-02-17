@@ -20,7 +20,7 @@ CREATE TABLE Product (
     ProductName VARCHAR(100) NOT NULL,
     CategoryID INT NOT NULL,
     SupplierID INT NOT NULL,
-    UnitPrice DECIMAL(10,2) NOT NULL CHECK (UnitPrice > 0),
+    UnitPrice DECIMAL(7,2) NOT NULL CHECK (UnitPrice > 0),
     FOREIGN KEY (CategoryID) REFERENCES Category(CategoryID),
     FOREIGN KEY (SupplierID) REFERENCES Supplier(SupplierID)
 );
@@ -64,7 +64,7 @@ CREATE TABLE Sale (
     CustomerID INT NOT NULL,
     EmployeeID INT NOT NULL,
     QuantitySold INT NOT NULL CHECK (QuantitySold > 0),
-    TotalAmount DECIMAL(10,2) NOT NULL CHECK (TotalAmount >= 0),
+    TotalAmount DECIMAL(7,2) NOT NULL CHECK (TotalAmount >= 0),
     FOREIGN KEY (ProductID) REFERENCES Product(ProductID),
     FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID),
     FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)
