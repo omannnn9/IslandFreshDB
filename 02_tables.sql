@@ -59,7 +59,6 @@ CREATE TABLE Employee (
 );
 
 --7 sale table --Oman
-
 CREATE TABLE Sale (
     SaleID INT PRIMARY KEY,
     SaleDate DATETIME DEFAULT GETDATE(),
