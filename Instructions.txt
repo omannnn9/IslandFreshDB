@@ -19,7 +19,7 @@ What Kaniah wants from us:
  Leader:Ashfar
  Deadline:week 2
 
-3.Normalization till 3NF
+3.Normalization till 3NF ✅
  Leader:Ashfar
  Deadline:week 4
 
