@@ -71,9 +71,9 @@ CREATE TABLE Sale (
     TotalAmount DECIMAL(7,2) NOT NULL CHECK (TotalAmount >= 0),
     FOREIGN KEY (ProductID) REFERENCES Product(ProductID),
     FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID),
-    FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID),
-    FOREIGN KEY (SaleDetailsID) REFERENCES SaleDetails(SaleDetailsID)
+    FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)
 );
+
 
 
 
