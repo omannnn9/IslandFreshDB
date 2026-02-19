@@ -66,9 +66,14 @@ CREATE TABLE Sale (
     ProductID INT NOT NULL,
     CustomerID INT NOT NULL,
     EmployeeID INT NOT NULL,
+    SaleDetailsID INT NOT NULL,
     QuantitySold INT NOT NULL CHECK (QuantitySold > 0),
     TotalAmount DECIMAL(7,2) NOT NULL CHECK (TotalAmount >= 0),
     FOREIGN KEY (ProductID) REFERENCES Product(ProductID),
     FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID),
-    FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)
+    FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID),
+    FOREIGN KEY (SaleDetailsID) REFERENCES SaleDetails(SaleDetailsID)
 );
+
+
+
