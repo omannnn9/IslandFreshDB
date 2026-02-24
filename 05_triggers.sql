@@ -81,7 +81,7 @@ BEGIN
     WHERE Quantity < 5;
 END;
 
-Testing Trigs :
+#Testing Trigs(Pas meter dans final code, only for testing purpose sa):
 SELECT * FROM Stock;
 
 INSERT INTO Sale (ProductID, CustomerID, EmployeeID, QuantitySold, TotalAmount)
