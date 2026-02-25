@@ -72,6 +72,15 @@ CREATE TABLE Sale (
     FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)
 );
 
+--audit table
+CREATE TABLE AuditLog(
+    AuditID INT IDENTITY(1,1) PRIMARY KEY,
+    UserName VARCHAR(100),
+    ActionType VARCHAR(20),
+    TableName VARCHAR(50),
+    ActionDate DATETIME DEFAULT GETDATE()
+    );
+    
 
 
 
