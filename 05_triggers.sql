@@ -81,6 +81,36 @@ BEGIN
     WHERE Quantity < 5;
 END;
 
+#Trig5 :
+    CREATE TRIGGER trg_Audit_Product
+ON Product
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF EXISTS (SELECT * FROM inserted) 
+       AND NOT EXISTS (SELECT * FROM deleted)
+    BEGIN
+        INSERT INTO AuditLog (UserName, ActionType, TableName)
+        VALUES (SYSTEM_USER, 'INSERT', 'Product');
+    END
+
+    IF EXISTS (SELECT * FROM deleted) 
+       AND NOT EXISTS (SELECT * FROM inserted)
+    BEGIN
+        INSERT INTO AuditLog (UserName, ActionType, TableName)
+        VALUES (SYSTEM_USER, 'DELETE', 'Product');
+    END
+
+    IF EXISTS (SELECT * FROM inserted) 
+       AND EXISTS (SELECT * FROM deleted)
+    BEGIN
+        INSERT INTO AuditLog (UserName, ActionType, TableName)
+        VALUES (SYSTEM_USER, 'UPDATE', 'Product');
+    END
+END;
+
 #Testing Trigs(Pas meter dans final code, only for testing purpose sa):
 SELECT * FROM Stock;
 
