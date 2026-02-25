@@ -35,7 +35,7 @@ What Kaniah wants from us:
  Leader:Yohan
  Deadline:week 5
 
-7.DCL - Relevant security measures 
+7.DCL - Relevant security measures ✅
  Leader:Yohan
  Deadlineweek 6
 
