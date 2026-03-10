@@ -7,8 +7,13 @@ CREATE PROCEDURE sp_AddProduct
     @ReorderLevel INT
 AS
 BEGIN
-    INSERT INTO Product (ProductName, CategoryID, SupplierID, UnitPrice, ReorderLevel)
-    VALUES (@ProductName, @CategoryID, @SupplierID, @UnitPrice, @ReorderLevel);
+    BEGIN TRY
+     INSERT INTO Product (ProductName, CategoryID, SupplierID, UnitPrice, ReorderLevel)
+     VALUES (@ProductName, @CategoryID, @SupplierID, @UnitPrice, @ReorderLevel);
+    END TRY
+    BEGIN CATCH
+        PRINT 'ERROR' + ERROR_MESSAGE()
+    END CATCH
 END;
 
 --2 update product price with try catch if product does not exist
@@ -26,7 +31,7 @@ BEGIN
             PRINT 'Product does not exist';
     END TRY
     BEGIN CATCH
-        PRINT 'Error occurred';
+        PRINT 'Error' + ERROR_MESSAGE()
     END CATCH
 END;
 
@@ -34,9 +39,14 @@ END;
 CREATE PROCEDURE sp_ViewProducts
 AS
 BEGIN
-    SELECT p.ProductID, p.ProductName, c.CategoryName, s.SupplierName, p.UnitPrice
-    FROM Product p
-    JOIN Category c ON p.CategoryID = c.CategoryID
-    JOIN Supplier s ON p.SupplierID = s.SupplierID;
+    BEGIN TRY
+     SELECT p.ProductID, p.ProductName, c.CategoryName, s.SupplierName, p.UnitPrice
+     FROM Product p
+     JOIN Category c ON p.CategoryID = c.CategoryID
+     JOIN Supplier s ON p.SupplierID = s.SupplierID;
+    END TRY
+    BEGIN CATCH
+        PRINT 'Error' + ERROR_MESSAGE()
+    END CATCH
 END;
 
