@@ -3,13 +3,12 @@ CREATE PROCEDURE sp_AddProduct
     @ProductName VARCHAR(100),
     @CategoryID INT,
     @SupplierID INT,
-    @UnitPrice DECIMAL(10,2),
-    @ReorderLevel INT
+    @UnitPrice DECIMAL(10,2)
 AS
 BEGIN
     BEGIN TRY
-     INSERT INTO Product (ProductName, CategoryID, SupplierID, UnitPrice, ReorderLevel)
-     VALUES (@ProductName, @CategoryID, @SupplierID, @UnitPrice, @ReorderLevel)
+     INSERT INTO Product (ProductName, CategoryID, SupplierID, UnitPrice)
+     VALUES (@ProductName, @CategoryID, @SupplierID, @UnitPrice)
     END TRY
     BEGIN CATCH
         PRINT 'ERROR' + ERROR_MESSAGE()
